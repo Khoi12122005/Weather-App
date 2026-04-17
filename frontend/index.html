@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <p class="eyebrow">Fullstack Weather App</p>
+        <h1>Xem thời tiết theo thành phố</h1>
+        <p class="subtitle">
+          Nhập tên thành phố để lấy dữ liệu thời tiết hiện tại từ OpenWeather API.
+        </p>
+
+        <form id="weatherForm" class="search-form">
+          <input
+            id="cityInput"
+            type="text"
+            placeholder="Ví dụ: Ho Chi Minh City"
+            autocomplete="off"
+          />
+          <button type="submit">Tìm kiếm</button>
+        </form>
+
+        <div class="suggestions">
+          <span>Gợi ý nhanh:</span>
+          <button class="suggestion-btn" data-city="Hanoi" type="button">Hà Nội</button>
+          <button class="suggestion-btn" data-city="Da Nang" type="button">Đà Nẵng</button>
+          <button class="suggestion-btn" data-city="Ho Chi Minh City" type="button">TP.HCM</button>
+        </div>
+
+        <p id="statusMessage" class="status-message"></p>
+
+        <section id="weatherResult" class="weather-result hidden">
+          <div class="weather-header">
+            <div>
+              <h2 id="cityName">--</h2>
+              <p id="weatherText">--</p>
+            </div>
+            <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon" />
+          </div>
+
+          <div class="weather-grid">
+            <article class="info-box">
+              <span>Nhiệt độ</span>
+              <strong id="temperature">--</strong>
+            </article>
+            <article class="info-box">
+              <span>Độ ẩm</span>
+              <strong id="humidity">--</strong>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

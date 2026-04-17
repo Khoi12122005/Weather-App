@@ -1,0 +1,27 @@
+{
+  "name": "weather-app-fullstack",
+  "version": "1.0.0",
+  "description": "A beginner-friendly fullstack weather app using Node.js, Express, and OpenWeather API.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [
+    "weather",
+    "fullstack",
+    "express",
+    "openweather"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
